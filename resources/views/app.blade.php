@@ -8,6 +8,55 @@
 </head>
 
 <body>
+    {{-- Header Start --}}
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Muhammad Suhendri</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-dark_primary py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark_primary py-2 mx-8 flex group-hover:text-primary">Tentang
+                                    Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio"
+                                    class="text-base text-dark_primary py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#client"
+                                    class="text-base text-dark_primary py-2 mx-8 flex group-hover:text-primary">Client</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog"
+                                    class="text-base text-dark_primary py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-dark_primary py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    {{-- Header End --}}
+
     {{-- Hero Section Start --}}
     <section class="pt-36" id="home">
         <div class="container">
@@ -46,18 +95,20 @@
     <section class="pt-36 pb-32" id="about">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-                    <h2 class="font-bold text-dark_primary text-3xl mb-5 max-w-md">Woylah</h2>
-                    <p class="font-medium text-base text-secondary max-w-xl">Lorem ipsum dolor, sit amet consectetur
+                    <h2 class="font-bold text-dark_primary text-3xl mb-5 max-w-md lg:text-4xl">Woylah</h2>
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor, sit amet
+                        consectetur
                         adipisicing
                         elit. Soluta nobis, delectus tempora ullam
                         quo nam? Ex, magni consequatur? Eveniet temporibus nobis magnam odio illum inventore, facere
                         consectetur adipisci dolores deleniti.</p>
                 </div>
-                <div class="w-full px-4">
-                    <h3 class="font-semibold text-dark_primary mb-4">Lets friends</h3>
-                    <p class="font-medium text-base text-secondary mb-6 max-w-xl">Lorem ipsum dolor sit amet consectetur
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark_primary mb-4 lg:text-3xl lg:pt-10">Lets friends</h3>
+                    <p class="font-medium text-base text-secondary mb-6 max-w-xl lg:text-lg">Lorem ipsum dolor sit amet
+                        consectetur
                         adipisicing elit. Placeat deserunt atque incidunt
                         repellendus perferendis dolore similique est nisi nesciunt inventore.</p>
                     <div class="flex items-center">
@@ -108,6 +159,32 @@
         </div>
     </section>
     {{-- About Section End --}}
+
+    {{-- Portofolio Section Start --}}
+    <section class="pt-36 pb-16 bg-slate-100" id="portofolio">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
+                    <h2 class="font-bold text-dark_primary text-3xl mb-4">Project Terbaru</h2>
+                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Officiis amet beatae cupiditate quos
+                        consectetur nihil aperiam at aut distinctio commodi laudantium facere doloremque laboriosam,
+                        molestiae ipsum nesciunt quod illo vero?</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center">
+                <div class="mb-12 p-4">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="image/portofolio/image.png" alt="website Wedding Invitation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Portofolio Section End --}}
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
